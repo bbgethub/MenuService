@@ -24,7 +24,6 @@ public class Menu {
 	 @GetMapping("/{id}")
 	 public MenuItem getAll(@PathVariable("id") String id) {
 	     MenuItem item= menuService.get(new Long(id));
-	     
 	     return item;
 	 }
 }
